@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/seller_pending"
+        android:icon="@drawable/pending"
+        android:title="Pending"/>
+
+    <item android:id="@+id/seller_processing"
+        android:icon="@drawable/processing"
+        android:title="Processing"/>
+
+    <item android:id="@+id/seller_ToBeDeliver"
+        android:icon="@drawable/tobedelivered"
+        android:title="To Be Deliver"/>
+
+    <item android:id="@+id/seller_delivered"
+        android:icon="@drawable/delivered"
+        android:title="Delivered"/>
+
+    <item android:id="@+id/seller_history"
+        android:icon="@drawable/history"
+        android:title="History"/>
+
+</menu>

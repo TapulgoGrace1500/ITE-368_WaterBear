@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WaterBear2021</string>
+    <string name="action_settings" />
+    <string name="menu_home" />
+    <string name="menu_gallery" />
+    <string name="menu_slideshow" />
+    <string name="open" />
+    <string name="close" />
+    <string name="search_hint">Search</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="delivery_name">Delivery Name</string>
+    <string name="email">Email</string>
+    <string name="delivery_lists">Delivery Lists</string>
+</resources>

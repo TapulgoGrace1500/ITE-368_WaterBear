@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnLogout" type="id" />
+    <item name="editText_RegLastname" type="id" />
+    <item name="textView7" type="id" />
+    <item name="editText_RegFirstname" type="id" />
+    <item name="textView8" type="id" />
+    <item name="textView5" type="id" />
+    <item name="editText_RegAddress" type="id" />
+    <item name="textView9" type="id" />
+    <item name="editText_RegContact" type="id" />
+    <item name="textView10" type="id" />
+    <item name="editText_RegEmail" type="id" />
+    <item name="textView12" type="id" />
+    <item name="editText_RegPassword" type="id" />
+    <item name="isBuyer" type="id" />
+    <item name="isSeller" type="id" />
+    <item name="Merchant_admin_button_pending" type="id" />
+    <item name="Merchant_admin_button" type="id" />
+    <item name="Customer_admin_button" type="id" />
+</resources>

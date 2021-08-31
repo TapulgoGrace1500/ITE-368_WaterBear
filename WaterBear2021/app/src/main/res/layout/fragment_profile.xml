@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e1f5ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_admin_profile">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="115dp"
+        android:text="Admin Profile" />
+
+    <Button
+        android:id="@+id/admin_logOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_background"
+        app:backgroundTint="#3F8EB5"
+        android:layout_margin="20dp"
+        android:text="SIGN OUT" />
+</RelativeLayout>

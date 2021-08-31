@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="USER INFORMATION">
+        <menu>
+            <item
+                android:id="@+id/Usermail"
+                android:title="Profile" />
+        </menu>
+    </item>
+    <item android:title="LOCATION DETAILS">
+        <menu>
+            <item
+                android:id="@+id/location"
+                android:title="Address" />
+
+        </menu>
+    </item>
+    <item android:title="ORDER DETAILS">
+        <menu>
+            <item
+                android:id="@+id/CustomerOrder"
+                android:title="Orders" />
+
+        </menu>
+    </item>
+
+    <item android:title="TERMS AND CONDITIONS/PRIVACY">
+        <menu>
+            <item
+                android:id="@+id/terms"
+                android:title="Terms and Conditions" />
+            <item
+                android:id="@+id/privacy"
+                android:title="Privacy"/>
+
+        </menu>
+    </item>
+    <item android:title="SIGNING OUT">
+
+        <menu>
+            <item
+                android:id="@+id/logout"
+
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

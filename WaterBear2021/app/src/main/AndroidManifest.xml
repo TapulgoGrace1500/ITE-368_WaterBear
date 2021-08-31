@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.waterbear2021">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/waterbear"
+        android:label="WaterBear"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WaterBear2021.NoActionBar"
+        tools:replace="android:icon,android:label,android:theme">
+        <activity android:name=".DeliveryListProfile"></activity>
+        <activity android:name=".AddDelivery" />
+        <activity android:name=".AttachImageForApproval" />
+        <activity android:name=".OrderPendingDetail" />
+        <activity android:name=".OrderSummary" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Buyer_Orders" />
+        <activity android:name=".Seller_Orders" />
+        <activity android:name=".Seller_Home" />
+        <activity android:name=".AddToCart" />
+        <activity android:name=".Admin_Merchant_Pending_Details" />
+        <activity android:name=".Admin_Merchant_Pending_Profile" />
+        <activity android:name=".Admin_Merchant_Details" />
+        <activity android:name=".Admin_Customer_Profile" />
+        <activity android:name=".Admin_Merchant_Profile" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Cart" />
+        <activity android:name=".UserInformation" />
+        <activity android:name=".StoreProductsDashboard" />
+        <activity
+            android:name=".AddProducts"
+            android:parentActivityName=".SellerDashboard" />
+        <activity
+            android:name=".SellerDashboard"
+            android:launchMode="singleTop" />
+        <activity android:name=".UserRegistration" />
+        <activity android:name=".BuyerActivity" />
+        <activity android:name=".SellerActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

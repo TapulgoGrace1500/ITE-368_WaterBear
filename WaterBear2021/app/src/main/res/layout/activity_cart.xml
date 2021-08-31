@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5ff"
+    tools:context=".Cart">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3F8EB5"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="100dp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/PlaceOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/Total"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="-98dp"
+            android:backgroundTint="#3F8EB5"
+            android:clickable="true"
+            android:text="Place Order"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvTotal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-39dp"
+            android:fontFamily="monospace"
+            android:text="Total(Incl.DeliveryFee)"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/DeliveryFee"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-39dp"
+            android:background="#F6E655"
+            android:fontFamily="monospace"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="0.00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvasad"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-39dp"
+            android:fontFamily="monospace"
+            android:text="Delivery Fee"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/DeliveryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/SumTotal"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-39dp"
+            android:background="#F6E655"
+            android:fontFamily="monospace"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="0.00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvasad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_recyclerView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-39dp"
+            android:fontFamily="monospace"
+            android:text="Total(Sum)"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/SumTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_recyclerView"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-39dp"
+            android:background="#F6E655"
+            android:fontFamily="monospace"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="0.00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
